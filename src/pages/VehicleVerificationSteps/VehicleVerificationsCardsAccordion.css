@@ -1,0 +1,10 @@
+.verification-card-style {
+    width: 100%;
+    margin: auto;
+    border: 1px solid #334BC2;
+    box-shadow: 0px 4px 30px 0px #2C3B971A;
+    font-size: 14px;
+}
+.custom-label-radio input[type="radio"]:checked + label {
+    color: #334BC2;
+  }

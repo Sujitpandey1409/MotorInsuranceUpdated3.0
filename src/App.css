@@ -1,0 +1,25 @@
+.react-datepicker-wrapper{
+    width: 100%;
+}
+.input-icon{
+    display: flex;
+    right: 10px;
+    cursor: pointer;
+    position: absolute;
+}
+@keyframes blink {
+    0% { border-color: red; }
+    50% { border-color: transparent; }
+    100% { border-color: red; }
+  }
+  
+  .blink-error {
+    animation: blink 0.3s step-end 3;
+    border: 2px solid red;
+  }
+  .error-border-date{
+    border: 1px solid red; 
+    border-radius: 4px; 
+  }
+  
+  

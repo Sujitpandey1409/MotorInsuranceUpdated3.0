@@ -1,0 +1,41 @@
+.verification-header-cardBody {
+    margin: auto;
+    padding: 0 20px;
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.verification-header-cardBody h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.kyc-editButton {
+    width: 72px;
+    height: 30px;
+    border-radius: 8px;
+    background: #2c3b970d;
+    font-weight: 700;
+    color: rgba(51, 75, 194, 1);
+    cursor: pointer;
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+}
+
+.arrow-up-expanded {
+    margin-left: auto;
+}
+
+.editArrowSeperator {
+    width: 23px;
+    height: 0;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    rotate: -90deg;
+    border: 1px solid rgba(0, 0, 0, 0.3)
+}

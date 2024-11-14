@@ -1,0 +1,150 @@
+.insurer-card-container {
+    font-family: 'Mukta', sans-serif;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+.isurer-card {
+    width: 503px;
+    height: 500px;
+    border-radius: 8px;
+    padding: 4px 31px;
+    background: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+
+    .close-Button {
+        position: relative;
+        top: 0px;
+        left: 236px;
+    }
+}
+
+
+
+.header-container {
+    width: 443px;
+    height: 82px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-text-icon-container {
+    width: 260px;
+    height: 48px;
+    display: flex;
+    gap: 10px;
+    border-radius: 12px;
+    padding: 2px 14px;
+    align-items: center;
+
+    .icon-container {
+        width: 39px;
+        height: 36px;
+        background: rgba(246, 246, 246, 1);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+    }
+}
+
+.popular-insurer-section {
+    width: 443px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 29px;
+}
+
+.isurer-types-container {
+    width: 443px;
+    height: 147px;
+}
+
+.isurer-type-card {
+    width: 212px;
+    height: 65px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.isurer-type-card:active {
+    border: 1px solid rgba(51, 75, 194, 1);
+}
+
+.isurer-responsive-text-p {
+    display: none;
+}
+
+@media screen and (max-width: 440px) {
+    .header-container {
+        width: 327px;
+    }
+
+    .insurer-responsive-search {
+        width: 327px;
+    }
+
+    .isurer-responsive-text-h5 {
+        margin-left: 60px;
+    }
+
+    .isurer-card {
+        width: 352px;
+    }
+
+    .insurer-row {
+        width: 338px;
+        left: 60px;
+        position: relative;
+
+    }
+
+    .isurer-type-card {
+        width: 157px;
+    }
+
+    .proceed-button-responsive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 327px;
+        text-align: center;
+        margin-left: 60px!important;
+        margin-top: 7px !important;
+    }
+
+    .insurer-responsive-close-Button {
+        left: 163px;
+    }
+
+    .isurer-responsive-text-p {
+        display: inline;
+        width: 327px;
+        color: #867474;
+        font-size: 11px;
+        position: relative;
+        left: 53px;
+        margin-top: 7px;
+    }
+}

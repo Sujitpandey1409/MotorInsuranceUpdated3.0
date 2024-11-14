@@ -1,0 +1,81 @@
+.edit-policy-detail-popUp-container {
+    font-family: 'Mukta', sans-serif;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+.edit-policy-detail-popUp {
+    margin: auto;
+    /* border: 1px solid #334BC2; */
+    padding: 7px;
+    padding-top: 12px;
+    border-radius: 8px;
+}
+
+.cancel-button {
+    width: 129px;
+    height: 37px;
+    padding: 8px 32px 8px 32px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(44, 59, 151, 1);
+    border: 1px solid rgba(44, 59, 151, 1);
+    margin-left: 279px;
+}
+
+.cancel-button:hover {
+    color: #fff;
+    background: rgba(44, 59, 151, 1);
+}
+
+.padding-header {
+    padding: 10px 10px 0;
+}
+
+.close-Button {
+    position: absolute;
+    top: 4px;
+    right: 12px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.edit-policy-detail-popUp hr {
+    margin: auto 2px;
+    margin-left: 10px;
+}
+
+.plan-edit-policy-btn-container {
+    display: flex;
+    justify-self: center;
+    gap: 20px;
+    .cancel-button {
+        margin-left: 260px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .plan-edit-policy-btn-container{
+        display: flex;
+        gap: 28px;
+        .cancel-button{
+            width: 98%;
+            margin: 0;
+        }
+    }
+}
+@media screen and (max-width:640px) {
+    .edit-policy-detail-popUp{
+        width: 324px;
+    }
+}

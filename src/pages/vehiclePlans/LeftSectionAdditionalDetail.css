@@ -1,0 +1,33 @@
+.AdditionDetailCoantainer {
+    display: flex;
+    flex-direction: column;
+    width: 243px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:950px) {
+
+    .AdditionDetailCoantainer {
+        background-color: #fff;
+        padding: 21px 20px;
+        width: 90%;
+        border-radius: 8px 8px 0 0;
+        height: 60vh;
+    }
+
+    .apply-button {
+        height: 37px;
+        width: 45%;
+        gap: 10px;
+        background: rgba(44, 59, 151, 1);
+        color: white;
+        font-family: 'Mukta', sans-serif;
+        border: none;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

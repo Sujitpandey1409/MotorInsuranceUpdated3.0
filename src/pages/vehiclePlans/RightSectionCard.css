@@ -1,0 +1,245 @@
+/* Main Card Container */
+.card-container {
+    display: grid;
+    position: relative;
+    width: 275px;
+    min-height: 345.125px;
+    height: fit-content;
+    /* justify-content: space-between; */
+    background: #FFFFFF;
+    border: 1px solid #334BC2;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Header Section */
+.card-header {
+    width: 243px;
+    height: 59px;
+    padding: 9px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px 8px 0 0 !important;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    background: #FCFCFC;
+}
+
+.logo {
+    width: 88px;
+    height: 27px;
+    background: #FFFFFF;
+    border-radius: 8px 0 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo-image {
+        width: 88px;
+        height: 27px;
+    }
+}
+
+
+.plan-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.plan-title {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #2B3545;
+    margin: 0;
+}
+
+.premium-breakup {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 14px;
+    color: #334BC2;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.forward-arrow {
+    width: 17px;
+    height: 17px;
+}
+
+/* Divider Line */
+.divider-line {
+    /* width: 238px; */
+    /* border: 1px solid #c8ced6; */
+    position: relative;
+}
+
+/* Benefits Section */
+.benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 15px;
+}
+
+.benefits-title {
+    font-weight: 700;
+    font-size: 14px;
+    color: #00183D;
+    margin: 0;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefits-list button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(45, 164, 74, 0.04);
+    color: #283B99;
+    font-size: 11px;
+    font-weight: 500;
+    border: none;
+    text-decoration: underline;
+    height: 27px;
+    cursor: pointer;
+    padding: 11px;
+    border-radius: 8px;
+}
+
+.benefits-list li {
+    margin-bottom: 7px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 12px;
+    color: #2B3545;
+    text-transform: capitalize;
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    background: #2C3B97;
+    border-radius: 50%;
+}
+
+/* Customize Button */
+.customize-button {
+    /* position: absolute; */
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 79px;
+    height: 26px;
+    padding: 10px 20px;
+    border: 1px solid #2C3B97;
+    border-radius: 6.82px;
+    color: #2C3B97;
+    font-family: 'Mukta', sans-serif;
+    font-size: 12px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+/* Price Section */
+.price-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFF;
+    margin-top: 30px;
+}
+
+.price-info {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Mukta', sans-serif;
+}
+
+.premium-label {
+    font-size: 12px;
+    color: #8799B5;
+    font-weight: 100;
+    margin: 0;
+}
+
+.premium-amount {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2B3545;
+    margin: 0;
+}
+
+/* Buy Now Button */
+.buy-now-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 19px;
+    background-color: #283B99;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    width: 104px;
+    /* height: 35px; */
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 950px) {
+    .price-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 11px;
+        margin-top: 0;
+    }
+
+    .buy-now-button{
+        width: 100%!important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .card-container {
+        width: 100%;
+        padding: 20px 36px;
+    }
+
+    .divider-line {
+        width: 100%;
+    }
+
+    .card-header {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 14px;
+    }
+}
+@media screen and (max-width: 440px) {
+    .card-container{
+        padding: 20px 25px;
+    }
+    .buy-now-button{
+        width: 100%!important;
+    }
+}

@@ -1,0 +1,18 @@
+.vehicle-details-container {
+    /* background: #F4F4F4; */
+    padding-top: 61px;
+    /* min-height: 90vh; */
+
+
+}
+.vehicle-details-wrapper{
+    /* minHeight:'100vh', minWidth:'100vw', background:'#F4F4F4' */
+    min-height: 100vh;
+    min-width: 100vw;
+    background: #F4F4F4;
+}
+@media screen and (max-width: 768px) {
+    .vehicle-details-wrapper{
+        min-height: 900px;
+    }
+}

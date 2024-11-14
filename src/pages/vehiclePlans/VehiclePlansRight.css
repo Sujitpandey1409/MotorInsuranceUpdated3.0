@@ -1,0 +1,180 @@
+.plan-details-right-sec-container {
+    padding-top: 40px;
+    position: fixed;
+    width: 70%;
+}
+
+.plan-detail-header {
+    display: flex;
+    align-items: center;
+    color: #00183D;
+    font-size: 14px;
+    text-transform: capitalize;
+    gap: 5px;
+}
+
+.plan-detail-header span {
+    font-weight: 600;
+}
+
+.notification-bar-container {
+    display: inline-flex;
+    padding: 16px;
+    height: 43px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px dashed #2DA44A;
+    width: 100%;
+    background: rgba(45, 164, 74, 0.04);
+}
+
+.notification-icon-text {
+    display: flex;
+    padding: 1px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    line-height: 23.27px;
+}
+
+.notification-bar-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(45, 164, 74, 0.04);
+    color: #283B99;
+    font-size: 14px;
+    font-weight: 500;
+    border: 0.5px solid var(--Color, #334BC2);
+    height: 27px;
+    cursor: pointer;
+}
+
+.left-section-card-in-right {
+    display: none;
+}
+
+.notification-bar-container button:hover {
+    background-color: transparent;
+    color: #283B99;
+    border: 0.5px solid var(--Color, #3371c2);
+
+}
+
+.notification-icon-text p {
+    color: #000000;
+    margin: auto;
+}
+
+.settin-button-plan {
+    display: none;
+}
+
+.plan-details-right-sec-container-h-full {
+    position: static!important;
+    width: 100%!important;
+    padding-top: 40px;
+    padding-right: 30px;
+}
+
+@media screen and (max-width: 900px) {}
+
+@media screen and (max-width: 950px) {
+    .plan-details-right-sec-container {
+        position: static;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .plan-cards-right {
+        flex-wrap: wrap;
+        justify-content: space-evenly !important;
+        gap: 21px;
+    }
+
+    .left-section-card-in-right-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left-section-card-in-right {
+        display: grid;
+        height: auto;
+        width: 275px;
+    }
+
+    .right-show-more {
+        display: flex;
+        font-size: 11px;
+        color: #3371c2;
+        text-decoration: none;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+
+    .settin-button-plan {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #334BC2;
+        position: absolute;
+        right: 17px;
+        background: #fff;
+        padding: 5px;
+        border-radius: 8px;
+    }
+
+    .left-section-AdditinalDetailcard-overlay {
+        position: fixed;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        top: 0;
+        left: 0;
+    }
+    .left-section-AdditinalDetailcard-overlay{
+    .drawer-close-button {
+        top: 142px !important;
+        position: absolute!important;
+        border-radius: 40px !important;
+        background: #F8F8F8 !important;
+        color: #2B3545 !important;
+    }
+}
+
+}
+@media screen and (max-width: 1127px) {
+    .plan-details-right-sec-container-h-full {
+        
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .notification-bar-container {
+        padding-top: 33px;
+        padding-bottom: 33px;
+    }
+    
+}
+
+@media screen and (max-width: 650px) {
+    .left-section-card-in-right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .additional-close-btn-responsive {
+        top: 320px !important;
+    }
+}
